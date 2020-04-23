@@ -1,0 +1,69 @@
+/**index.wxss**/
+.container{
+  width: 95%;
+  margin: 20rpx auto 0;
+}
+.add-plan{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  
+}
+input{
+  flex: 1;
+  height: 70rpx;
+  background-color: #eee;
+  padding-left: 20rpx;
+}
+.icon{
+  margin-left: 20rpx;
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+  background-color: lightgreen;
+  color: #fff;
+  text-align: center;
+  line-height: 70rpx;
+}
+.plan-operate{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40rpx;
+}
+.share-plan,.clear-plan{
+  padding: 15rpx 21rpx;
+  font-size: 20rpx;
+  font-weight: 800;
+  color: lightskyblue;
+  border: 1px solid lightskyblue;
+  border-radius: 6rpx;
+}
+.plan-item{
+  display: flex;
+  align-items: center;
+  height: 100rpx;
+}
+.check{
+  width: 40rpx;
+  height: 40rpx;
+  border: 1rpx solid green;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.check.is-check::after{
+  content:"";
+  width: 31rpx;
+  height: 31rpx;
+  background-color: green;
+  border-radius: 50%;
+}
+text{
+  font-size: 20px;
+  margin-left: 20rpx;
+}
+icon{
+  margin-left: 50rpx;
+}

@@ -1,0 +1,20 @@
+<view class="nav_bar_wrap" style="height:240px;">
+	<image src="../../img/img.jpg"></image>
+	<view class="wrap">
+		<view class="status" style="height:{{status}}px;{{containerStyle}}"></view>
+		<view class="nav_bar" style="height:{{navHeight}}px;{{containerStyle}}">
+			<view class="back_icon" wx:if="{{backIcon}}">
+				<image src="{{backIcon}}"></image>
+			</view>
+			<view class="home_icon" wx:if="{{homeIcon}}">
+				<image src="{{homeIcon}}"></image>
+			</view>
+			<view class="nav_icon" wx:if="{{titleImg}}">
+				<image src="{{titleImg}}" style="{{iconStyle}}"></image>
+			</view>
+			<view class="nav_title" wx:if="{{titleText && !titleImg}}">
+				<text style="{{textStyle}}">{{titleText}}</text>
+			</view>
+		</view>
+	</view>
+</view>

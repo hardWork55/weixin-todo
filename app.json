@@ -1,0 +1,37 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/todo_clock/todo_clock",
+    "pages/userMsg/userMsg"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTextStyle":"white",
+    "navigationStyle":"custom"
+  },
+  "usingComponents":{
+    "navBar":"/components/navBar/navBar"
+  },
+  "tabBar":{
+    "color":"#fff",
+    "selectedColor": "lightgreen",
+    "backgroundColor": "#000",
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "text":"首页"
+      },
+      {
+        "pagePath":"pages/todo_clock/todo_clock",
+        "text":"todo时钟"
+      },
+      {
+        "pagePath":"pages/userMsg/userMsg",
+        "text":"用户信息"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

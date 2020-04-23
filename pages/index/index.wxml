@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<navBar title-text="天天学习，好好向上"></navBar>
+<view class="container">
+	<view class="add-plan">
+		<input placeholder="添加计划" cursor-spacing="40" value="{{planTxt}}" bindblur="changePlanTxt"></input>
+		<text class="icon" catchtap="addPlan">+</text>
+	</view>
+	<view class="plan-operate">
+		<view class="share-plan">分享清单</view>
+		<view>1个计划</view>
+		<view class="clear-plan">清除所有</view>
+	</view>
+	<view class="plan-list" wx:if="{{planList.length}}">
+		<view class="plan-item" wx:key="{{index}}"   wx:for="{{planList}}">
+			<view class="check {{item.isCheck?'is-check':''}}" catchtap="choicePlan" data-index="index"></view>
+			<text>{{item.value}}</text>
+			<icon type="clear" color="red"></icon>
+		</view>
+	</view>
+</view>
