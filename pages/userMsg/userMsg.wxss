@@ -1,0 +1,39 @@
+.user_msg_wrap{
+  width: 100vw;
+  height: 100vh;
+  padding: 40rpx 30rpx 0rpx;
+  box-sizing: border-box;
+  background-color: #eee;
+}
+.user_msg_head{
+  width: 100%;
+  height: 160rpx;
+  background-color: #fff;
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login_btn{
+  width: 200rpx;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  border-radius: 30rpx;
+  border: 1px solid #4dc4ff;
+  color: #4dc4ff;
+  font-size: 25rpx;
+}
+.user_list{
+  background-color: #fff;
+  margin-top: 40rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+.user_list view{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1rpx solid #eee;
+  font-size: 20rpx;
+}

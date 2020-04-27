@@ -1,0 +1,15 @@
+<view class="user_msg_wrap">
+  <view class="user_msg_head">
+    <view class="user_no_login"  wx:if="{{!isLogin}}">
+      <view class="login_btn">立即登录</view>
+    </view>
+    <view class="user_logined"  wx:if="{{isLogin}}"></view>
+  </view>
+  <view class="user_list">
+    <view>设置</view>
+    <view>关于todo</view>
+    <view>更新日志</view>
+    <view>赞赏支持</view>
+    <view>意见反馈</view>
+  </view>
+</view>

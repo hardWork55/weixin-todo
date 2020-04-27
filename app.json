@@ -1,8 +1,9 @@
 {
   "pages":[
-    "pages/index/index",
+    "pages/userMsg/userMsg",
     "pages/todo_clock/todo_clock",
-    "pages/userMsg/userMsg"
+    "pages/index/index"
+    
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -15,7 +16,7 @@
   },
   "tabBar":{
     "color":"#fff",
-    "selectedColor": "lightgreen",
+    "selectedColor": "#00cc66",
     "backgroundColor": "#000",
     "list":[
       {

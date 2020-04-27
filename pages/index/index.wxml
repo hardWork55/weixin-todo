@@ -1,20 +1,30 @@
 <!--index.wxml-->
-<navBar title-text="天天学习，好好向上"></navBar>
+<navBar title-text="天天学习，好好向上" img-src="../../img/img.jpg"></navBar>
 <view class="container">
 	<view class="add-plan">
 		<input placeholder="添加计划" cursor-spacing="40" value="{{planTxt}}" bindblur="changePlanTxt"></input>
 		<text class="icon" catchtap="addPlan">+</text>
 	</view>
 	<view class="plan-operate">
-		<view class="share-plan">分享清单</view>
+		<view class="all-operate">
+			<!-- <view class="active">全部</view>
+		  <view>待办</view>
+			<view>完结</view> -->
+			<view wx:for="{{operateTab}}" class="{{activeIndex === index ? 'active':''}}" catchtap="showPlist" wx:key='item' data-index="{{index}}">{{item}}</view>
+		</view>
 		<view>1个计划</view>
-		<view class="clear-plan">清除所有</view>
+		<view class="other-btns">
+		 	<view class="clear-plan" catchtap="clearPlan">清除所有</view>
+			<view class="share-plan">分享清单</view>
+		</view>
 	</view>
 	<view class="plan-list" wx:if="{{planList.length}}">
-		<view class="plan-item" wx:key="{{index}}"   wx:for="{{planList}}">
-			<view class="check {{item.isCheck?'is-check':''}}" catchtap="choicePlan" data-index="index"></view>
-			<text>{{item.value}}</text>
-			<icon type="clear" color="red"></icon>
+		<view class="plan-item"  wx:key="id"    wx:for="{{showList}}">
+			<view class="plan-text">
+			  	<view class="check {{item.isCheck?'is-check':''}}" catchtap="choicePlan" data-index="{{index}}" data-is-check="{{item.isCheck}}" data-id="{{item.id}}"></view>
+					<text class="{{item.isCheck?'is-check':''}}">{{item.value}}</text>
+			</view>
+			<icon type="clear" color="red" catchtap="delPlan" data-index="{{index}}"></icon>
 		</view>
 	</view>
 </view>

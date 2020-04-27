@@ -1,5 +1,5 @@
 <view class="nav_bar_wrap" style="height:240px;">
-	<image src="../../img/img.jpg"></image>
+	<image src="{{imgSrc}}" wx:if="{{imgSrc}}"></image>
 	<view class="wrap">
 		<view class="status" style="height:{{status}}px;{{containerStyle}}"></view>
 		<view class="nav_bar" style="height:{{navHeight}}px;{{containerStyle}}">

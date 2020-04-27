@@ -12,6 +12,10 @@ Component({
       type:String,
       value:'导航栏'
     },
+    imgSrc:{
+      type:String,
+      value:""
+    },
     titleImg:{
       type:String,
       value:''

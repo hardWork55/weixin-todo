@@ -1,1 +1,5 @@
-{}
+{
+  "navigationBarTitleText":"todo计划清单",
+  "navigationBarBackgroundColor":"#4dc4ff",
+  "navigationStyle":"default"
+}

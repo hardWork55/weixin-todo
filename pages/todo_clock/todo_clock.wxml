@@ -1,0 +1,12 @@
+<view class="todo_clock_wrap">
+  <view class="todo_clock_head">
+    <view class="todo_clock">20:00</view>
+  </view>
+  <view class=" todo_bottom">
+    <input class="plan_name" placeholder="给你的计划命名吧！"></input>
+    <view class="oprate_btns">
+      <view class="study_btn">学习</view>
+      <view class="relax_btn">休息</view>
+    </view>
+  </view>
+</view>

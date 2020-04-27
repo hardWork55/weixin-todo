@@ -31,6 +31,21 @@ input{
   justify-content: space-between;
   margin-top: 40rpx;
 }
+.all-operate,.other-btns{
+  display: flex;
+  align-items: center;
+}
+.all-operate view{
+  font-size: 18rpx;
+  padding: 6rpx 12rpx 8rpx;
+  border: 1rpx solid lightblue;
+  color: lightblue;
+  margin-left: 20rpx;
+}
+.all-operate view.active{
+  background-color: lightblue;
+  color: #fff;
+}
 .share-plan,.clear-plan{
   padding: 15rpx 21rpx;
   font-size: 20rpx;
@@ -39,9 +54,19 @@ input{
   border: 1px solid lightskyblue;
   border-radius: 6rpx;
 }
+.plan-list{
+  margin-top: 20rpx;
+}
+.plan-text{
+  display: flex;
+  align-items: center;
+
+}
+
 .plan-item{
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 100rpx;
 }
 .check{
@@ -53,6 +78,7 @@ input{
   justify-content: center;
   align-items: center;
 }
+
 .check.is-check::after{
   content:"";
   width: 31rpx;
@@ -63,6 +89,9 @@ input{
 text{
   font-size: 20px;
   margin-left: 20rpx;
+}
+text.is-check{
+  text-decoration: line-through;
 }
 icon{
   margin-left: 50rpx;
